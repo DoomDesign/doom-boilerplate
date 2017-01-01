@@ -16,14 +16,14 @@ var gulp        = require('gulp'),
 // Compile Pug HTML
 
 gulp.task('html:watch', function() {
-  gulp.src('assets/*.html')
+  gulp.src(['assets/*.html','assets/rootfiles/**/*'])
     .pipe(gulp.dest('build/'))
     .pipe(reload({stream: true}))
 });
 
 
 gulp.task('html:build', function() {
-  gulp.src('assets/*.html')
+  gulp.src(['assets/*.html','assets/rootfiles/**/*'])
     .pipe(gulp.dest('build/'));
 });
 
