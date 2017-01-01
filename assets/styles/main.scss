@@ -1,0 +1,21 @@
+/* UIkit Mixins */
+@import "vendor/uikit/uikit-mixins.scss";
+
+/* my customizations to UIkit */
+@import "_overrides";
+
+/* Rest of UIkit */
+/* REMEMBER: Some UIkit components are commented out! Check uikit.scss to add them 
+    back in if needed! */
+@import "vendor/uikit/uikit.scss";
+@import "vendor/uikit/uikit-variables.scss";
+
+/* Custom styles */
+@import "_mixins";
+@import "_variables";
+
+/* Global Styles, like body, links, headings, ... */
+@import "_global";
+
+/* page components, single sections, ... */
+@import "_components";
